@@ -8,7 +8,8 @@ from datetime import datetime
 from flask import Flask
 
 BOT_TOKEN = "7965180988:AAGWjcnWZ6cL3o4p4OEJ4cofU30k8YnJzEM"
-OWNER_ID = 7957605290
+# 3 te ID eksathe akta list e add kora hoyeche
+OWNER_IDS = [7957605290, 8230796264, 1444996252]
 ALLOWED_GROUP = "fightx3xvdg"
 
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -79,7 +80,8 @@ def uptime_loop():
 def turn_on(message):
     global is_running, target_chat_id, last_message_id
     
-    if message.from_user.id != OWNER_ID:
+    # User ID OWNER_IDS list e ache kina check kora hoche
+    if message.from_user.id not in OWNER_IDS:
         return
         
     if message.chat.username != ALLOWED_GROUP:
@@ -98,7 +100,8 @@ def turn_on(message):
 def turn_off(message):
     global is_running
     
-    if message.from_user.id != OWNER_ID:
+    # User ID OWNER_IDS list e ache kina check kora hoche
+    if message.from_user.id not in OWNER_IDS:
         return
         
     if is_running:
