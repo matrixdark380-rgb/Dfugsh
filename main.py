@@ -54,7 +54,7 @@ def uptime_loop():
             formatted_total = to_small_caps(uptime_new)
             
             # Updated the display text to match the new start date and time
-            uptime_text = f"""<blockquote><b>┏━「 ᴅᴀʀᴋ-ʙᴀʙᴀɪ ᴠs 𝟑x-ʙʀᴀɴᴅ-ᴀsʀᴀғᴜʟ 」</b>
+            uptime_text = f"""<blockquote><b>┏━「 ᴅ-ʙᴀʙᴀɪ ᴠs 𝟑x-ᴀsʀᴀғᴜʟ 」</b>
 <b>┣</b> 🧪 <b>ᴜᴘᴛɪᴍᴇ:</b> ᴄᴏᴅᴇ—ᴅᴇᴛᴇᴄᴛᴏʀ
 <b>┣</b> ⏳ <b>sᴛᴀʀᴛ:</b> 𝟷𝟺.𝟶𝟽.𝟸𝟶𝟸𝟼 | 𝟶𝟻:𝟶𝟷 ᴘᴍ
 <b>┣</b> ⏱️ <b>ᴜᴘᴛɪᴍᴇ:</b> {uptime_old}
